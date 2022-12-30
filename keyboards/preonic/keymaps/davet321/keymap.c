@@ -191,14 +191,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           if (record->event.pressed) {
             layer_on(_LOWER);
             update_tri_layer(_LOWER, _RAISE, _ADJUST);
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
             rgblight_enable();
             rgblight_sethsv_at(169, 255, 255, 8);
             #endif
           } else {
             layer_off(_LOWER);
             update_tri_layer(_LOWER, _RAISE, _ADJUST);
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
               rgblight_disable();
             #endif
           }
@@ -208,14 +208,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           if (record->event.pressed) {
             layer_on(_RAISE);
             update_tri_layer(_LOWER, _RAISE, _ADJUST);
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
             rgblight_enable();
             rgblight_sethsv_at(18, 255, 255, 1);
             #endif
           } else {
             layer_off(_RAISE);
             update_tri_layer(_LOWER, _RAISE, _ADJUST);
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
             rgblight_disable();
             #endif
           }
@@ -227,7 +227,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             #ifdef __AVR__
             writePinLow(E6);
             #endif
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
             rgblight_enable();
             rgblight_sethsv_at(HSV_WHITE, 7);
             #endif
@@ -236,7 +236,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             #ifdef __AVR__
             writePinHigh(E6);
             #endif
-            #ifdef BACKLIGHT_ENABLE
+            #ifdef RGBLIGHT_ENABLE
             rgblight_disable();
             #endif
           }
