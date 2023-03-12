@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |  Up  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl | Brite| GUI  | Alt  |Lower |    Space    |Raise |   /  | Left | Down |Right |
+ * | Ctrl | App  | GUI  | Alt  |Lower |    Space    |Raise |   /  | Left | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid(
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  UK_Q,    UK_W,    UK_E,    UK_R,    UK_T,    UK_Y,    UK_U,    UK_I,    UK_O,    UK_P,    KC_DEL,
   KC_ESC,  UK_A,    UK_S,    UK_D,    UK_F,    UK_G,    UK_H,    UK_J,    UK_K,    UK_L,    UK_SCLN, UK_QUOT,
   KC_LSFT, UK_Z,    UK_X,    UK_C,    UK_V,    UK_B,    UK_N,    UK_M,    UK_COMM, UK_DOT,  KC_UP,   KC_ENT,
-  KC_LCTL, BACKLIT, KC_LGUI, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   UK_SLSH, KC_LEFT, KC_DOWN, KC_RGHT
+  KC_LCTL, KC_APP,  KC_LGUI, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   UK_SLSH, KC_LEFT, KC_DOWN, KC_RGHT
 ),
 
 /* Colemak
